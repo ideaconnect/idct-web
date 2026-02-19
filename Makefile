@@ -4,9 +4,10 @@ HASH := $(shell date +%s%N | sha256sum | head -c 8)
 
 build:
 	rm -rf build/
-	mkdir -p build/$(HASH)/styles build/$(HASH)/files
+	mkdir -p build/$(HASH)/styles build/$(HASH)/files build/$(HASH)/favicon
 	cp index.html build/
 	cp -r assets/files/. build/$(HASH)/files/
+	cp -r assets/favicon/. build/$(HASH)/favicon/
 	cp assets/styles/main.css build/$(HASH)/styles/main.css
 	cp assets/main.js build/$(HASH)/main.js
 	minify -o build/$(HASH)/styles/main.css build/$(HASH)/styles/main.css
