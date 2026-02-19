@@ -181,7 +181,7 @@ header {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -220,6 +220,13 @@ header {
   flex-shrink: 0;
 }
 
+.project-card .project-desc {
+  font-size: .85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
 .project-card .tech {
   font-size: .8rem;
   color: var(--text-muted);
@@ -253,6 +260,7 @@ header {
 
 .btn-gh {
   margin-top: auto;
+  align-self: flex-end;
   display: inline-flex;
   align-items: center;
   gap: 6px;

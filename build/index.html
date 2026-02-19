@@ -8,7 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="9138bbb6/styles/main.css" />
+  <link rel="stylesheet" href="b7b525f6/styles/main.css" />
+  <link rel="icon" type="image/png" href="/b7b525f6/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/b7b525f6/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/b7b525f6/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/b7b525f6/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="IDCT" />
+  <link rel="manifest" href="/b7b525f6/favicon/site.webmanifest" />
 </head>
 <body>
 
@@ -16,7 +22,7 @@
   <header>
     <div class="container header-inner">
       <div class="header-brand">
-        <img src="9138bbb6/files/idct-logo-white.png" alt="IDCT logo" class="logo" />
+        <img src="b7b525f6/files/idct-logo-white.png" alt="IDCT logo" class="logo" />
         <div class="brand">
           <h1>IDCT Bartosz Pachołek</h1>
           <p class="slogan">Open-source Backend Solutions Development</p>
@@ -24,10 +30,10 @@
       </div>
       <nav class="social-links" aria-label="Social profiles">
         <a href="https://www.linkedin.com/in/bartosz-pacholek/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-          <img src="9138bbb6/files/linkedin-logo.svg" alt="LinkedIn" />
+          <img src="b7b525f6/files/linkedin-logo.svg" alt="LinkedIn" />
         </a>
         <a href="https://github.com/ideaconnect/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-          <img src="9138bbb6/files/github-logo.svg" alt="GitHub" />
+          <img src="b7b525f6/files/github-logo.svg" alt="GitHub" />
         </a>
       </nav>
     </div>
@@ -41,7 +47,7 @@
         <p>I'm passionate about Redis, C#, PHP/Symfony, and modern DevOps practices, and I love turning ambitious ideas into production&#8209;ready systems. Beyond engineering, I share my fascination with technology as a content creator, making innovation accessible to a wider audience.</p>
         <p>Above all, I'm driven by curiosity, craftsmanship, and the belief that great software should make a measurable impact.</p>
       </div>
-      <img src="9138bbb6/files/avatar.jpg" alt="Bartosz Pachołek" class="avatar" />
+      <img src="b7b525f6/files/avatar.jpg" alt="Bartosz Pachołek" class="avatar" />
     </div>
   </section>
 
@@ -53,116 +59,41 @@
 
         <!-- Project 1 -->
         <article class="project-card">
-          <h3>project-alpha</h3>
+          <h3>symfony-nats-messenger</h3>
+          <p class="project-desc">A Symfony Messenger transport integration for NATS JetStream, enabling reliable asynchronous messaging with persistent message streaming.</p>
           <div class="tech">
             <span>PHP</span>
             <span>Symfony</span>
-            <span>PostgreSQL</span>
+            <span>NATS</span>
           </div>
           <div class="tags">
-            <span class="tag">backend</span>
-            <span class="tag">rest-api</span>
+            <span class="tag">async</span>
+            <span class="tag">messaging</span>
             <span class="tag">open-source</span>
           </div>
-          <a class="btn-gh" href="https://github.com/idct-tech/project-alpha" target="_blank" rel="noopener">
-            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-              2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
-              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82
-              2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
-              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
+          <a class="btn-gh" href="https://github.com/ideaconnect/symfony-nats-messenger/" target="_blank" rel="noopener">
+            <img src="b7b525f6/files/github-mark.svg" alt="" aria-hidden="true" width="16" height="16" />
             View on GitHub
           </a>
         </article>
 
         <!-- Project 2 -->
         <article class="project-card">
-          <h3>service-core</h3>
+          <h3>rabbit-going-nats</h3>
+          <p class="project-desc">Tool which allows to passthrough messages fetched from RabbitMQ's queue to NATS PubSub. Useful if you receive a data feed through RabbitMQ, but you need to redistribute it further to multiple clients in the most efficient way.</p>
           <div class="tech">
-            <span>Go</span>
-            <span>gRPC</span>
-            <span>Redis</span>
+            <span>C#</span>
+            <span>.NET</span>
+            <span>NATS</span>
+            <span>RabbitMQ</span>
           </div>
           <div class="tags">
-            <span class="tag">microservices</span>
-            <span class="tag">grpc</span>
+            <span class="tag">pubsub</span>
+            <span class="tag">messaging</span>
             <span class="tag">open-source</span>
           </div>
-          <a class="btn-gh" href="https://github.com/idct-tech/service-core" target="_blank" rel="noopener">
-            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-              2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
-              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82
-              2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
-              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
-            View on GitHub
-          </a>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project-card">
-          <h3>data-pipeline</h3>
-          <div class="tech">
-            <span>Python</span>
-            <span>Kafka</span>
-            <span>ClickHouse</span>
-          </div>
-          <div class="tags">
-            <span class="tag">data</span>
-            <span class="tag">streaming</span>
-            <span class="tag">open-source</span>
-          </div>
-          <a class="btn-gh" href="https://github.com/idct-tech/data-pipeline" target="_blank" rel="noopener">
-            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-              2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
-              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82
-              2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
-              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
-            View on GitHub
-          </a>
-        </article>
-
-        <!-- Project 4 -->
-        <article class="project-card">
-          <h3>auth-gateway</h3>
-          <div class="tech">
-            <span>Rust</span>
-            <span>JWT</span>
-            <span>OAuth2</span>
-          </div>
-          <div class="tags">
-            <span class="tag">auth</span>
-            <span class="tag">security</span>
-            <span class="tag">open-source</span>
-          </div>
-          <a class="btn-gh" href="https://github.com/idct-tech/auth-gateway" target="_blank" rel="noopener">
-            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-              2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
-              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
-              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82
-              2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
-              0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
+          <a class="btn-gh" href="https://github.com/ideaconnect/rabbit-going-nats" target="_blank" rel="noopener">
+            <img src="b7b525f6/files/github-mark.svg" alt="" aria-hidden="true" width="16" height="16" />
             View on GitHub
           </a>
         </article>
@@ -233,7 +164,7 @@
           </div>
           <input type="hidden" name="redirectTo" value="http://localhost:8080/?thank-you" />
           <button type="submit" class="btn-submit" id="btn-submit" disabled>
-            <img src="9138bbb6/files/send-icon.svg" alt="" aria-hidden="true" class="btn-icon" />
+            <img src="b7b525f6/files/send-icon.svg" alt="" aria-hidden="true" class="btn-icon" />
             Send message
           </button>
         </form>
@@ -241,13 +172,13 @@
         <!-- Discord QR -->
         <div class="discord-block">
           <div class="discord-icon">
-            <img src="9138bbb6/files/discord-logo.svg" alt="" aria-hidden="true" width="18" height="18" />
+            <img src="b7b525f6/files/discord-logo.svg" alt="" aria-hidden="true" width="18" height="18" />
             Discord
           </div>
-          <img src="9138bbb6/files/discord.svg" alt="Discord server QR code" class="discord-qr" />
+          <img src="b7b525f6/files/discord.svg" alt="Discord server QR code" class="discord-qr" />
           <p class="discord-label">Join our Discord server</p>
           <a href="https://discord.gg/uYsuaa8HNm" target="_blank" rel="noopener" class="btn-discord">
-            <img src="9138bbb6/files/discord-logo-white.svg" alt="" aria-hidden="true" width="18" height="18" />
+            <img src="b7b525f6/files/discord-logo-white.svg" alt="" aria-hidden="true" width="18" height="18" />
             Join Discord
           </a>
         </div>
@@ -267,7 +198,7 @@
     </div>
   </footer>
 
-  <script src="9138bbb6/main.js" defer></script>
+  <script src="b7b525f6/main.js" defer></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

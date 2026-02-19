@@ -1,9 +1,4 @@
-{
-    # Email used for Let's Encrypt / ZeroSSL certificate registration
-    email bartosz@idct.tech
-}
-
-idct.tech, idct.pl {
+:80 {
     root * /app/build
     file_server
 
